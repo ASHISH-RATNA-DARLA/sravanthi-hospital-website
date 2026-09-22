@@ -19,7 +19,7 @@ export function Doctors() {
               <div className="w-full md:w-5/12 flex-shrink-0">
                 <div className="relative rounded-2xl overflow-hidden shadow-md">
                   <img
-                    alt={t(doctor.nameKey)}
+                    alt={`${t(doctor.nameKey)} — ${t(doctor.tagKey)}, Sravanthi Hospital Suryapet`}
                     className="w-full h-80 object-cover object-top hover:scale-105 transition-transform duration-500"
                     src={images[doctor.image]}
                     loading="lazy"

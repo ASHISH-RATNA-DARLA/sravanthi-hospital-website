@@ -11,9 +11,9 @@ import { BottomCta } from '../components/BottomCta';
 import { Seo } from '../components/Seo';
 import { buildFaqSchema } from '../data/schema';
 
-const TITLE = 'Sravanthi Hospital | Fertility, Maternity & Surgery Centre in Suryapet';
+const TITLE = 'Sravanthi Hospital | Gynecologist, Fertility & Maternity Care, Suryapet';
 const DESCRIPTION =
-  'Sravanthi Hospital in Vidya Nagar, Suryapet — Fertility, Maternity Care, Laser & Laparoscopic Surgery Centre. OPD 10 AM–8 PM. Emergency 24/7. Call 8344271555.';
+  'Sravanthi Hospital, Suryapet, Telangana — Gynecologist, Fertility (IVF/IUI) & Maternity Care, Laparoscopic Surgery. Emergency 24/7. Call 8344271555.';
 
 export default function HomePage() {
   return (

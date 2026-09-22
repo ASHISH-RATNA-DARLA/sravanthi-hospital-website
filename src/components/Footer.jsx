@@ -1,5 +1,6 @@
+import { Link } from 'react-router-dom';
 import { useLanguage } from '../i18n/LanguageContext';
-import { PHONE, footerSpecialtyKeys, INSTAGRAM_LINK } from '../data/content';
+import { PHONE, footerSpecialtyLinks, INSTAGRAM_LINK } from '../data/content';
 
 export function Footer() {
   const { t, logo } = useLanguage();
@@ -43,8 +44,12 @@ export function Footer() {
           <div className="flex flex-col gap-space-sm">
             <h4 className="font-title-md text-title-md font-bold text-on-primary">{t('footer.specialties.heading')}</h4>
             <ul className="flex flex-col gap-2 font-body-md text-body-md text-surface-container-high/90">
-              {footerSpecialtyKeys.map((key) => (
-                <li key={key}>{t(key)}</li>
+              {footerSpecialtyLinks.map(({ key, to }) => (
+                <li key={key}>
+                  <Link to={to} className="hover:text-secondary-fixed transition-colors">
+                    {t(key)}
+                  </Link>
+                </li>
               ))}
             </ul>
           </div>

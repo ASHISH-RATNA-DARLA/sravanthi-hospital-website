@@ -1,6 +1,6 @@
 # Sravanthi Hospital
 
-> Sravanthi Hospital is a fertility, maternity, and laparoscopic/laser surgery centre in Vidya Nagar, Suryapet, Telangana, India, established in 2021. It offers Fertility & Reproductive Medicine (infertility evaluation, IUI, IVF guidance), Maternity & Mother-Baby Care (antenatal care, high-risk pregnancy, delivery), and Laparoscopic & Laser Surgery (gall bladder, hernia, laser proctology, hysterectomy). Emergency care is available 24/7; OPD is 10:00 AM–8:00 PM daily.
+> Sravanthi Hospital is a gynecology, fertility, maternity, and laparoscopic/laser surgery centre in Vidya Nagar, Suryapet, Telangana, India, established in 2021. It offers Obstetrics & Gynecology, Fertility & Reproductive Medicine (infertility evaluation, IUI, IVF guidance), Maternity & Mother-Baby Care (antenatal care, high-risk pregnancy, delivery), and Laparoscopic & Laser Surgery (gallbladder/cholecystectomy, hernia and appendix repair, total laparoscopic hysterectomy, laser proctology for piles/fissure/fistula). Emergency care is available 24/7; OPD is 10:00 AM–8:00 PM daily. Primary service area: Suryapet, Telangana. Secondary service area: Telangana state, including outstation families from Kodad, Jangaon, Khammam, and Nalgonda.
 
 Key facts:
 - Address: Vidya Nagar, Suryapet, Telangana 508213, India
@@ -9,6 +9,7 @@ Key facts:
 - Reported stats (hospital-provided, periodically updated): ~50,000 outpatient visits, ~3,500 successful deliveries, ~200 laparoscopic surgeries
 - A dedicated Infertility Centre is expanding soon
 - Site is bilingual: English and Telugu (client-side toggle, same URL)
+- Full FAQ (14 questions covering timings, doctors, services, location, and booking) is on the Home page
 
 ## Pages
 

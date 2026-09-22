@@ -168,6 +168,14 @@ export const faqItems = [
   { id: 4, qKey: 'faq.q4', aKey: 'faq.a4' },
   { id: 5, qKey: 'faq.q5', aKey: 'faq.a5' },
   { id: 6, qKey: 'faq.q6', aKey: 'faq.a6' },
+  { id: 7, qKey: 'faq.q7', aKey: 'faq.a7' },
+  { id: 8, qKey: 'faq.q8', aKey: 'faq.a8' },
+  { id: 9, qKey: 'faq.q9', aKey: 'faq.a9' },
+  { id: 10, qKey: 'faq.q10', aKey: 'faq.a10' },
+  { id: 11, qKey: 'faq.q11', aKey: 'faq.a11' },
+  { id: 12, qKey: 'faq.q12', aKey: 'faq.a12' },
+  { id: 13, qKey: 'faq.q13', aKey: 'faq.a13' },
+  { id: 14, qKey: 'faq.q14', aKey: 'faq.a14' },
 ];
 
 export const facilities = [
@@ -176,12 +184,12 @@ export const facilities = [
   { id: 'delivery', icon: 'baby_changing_station', iconBg: 'bg-surface-variant text-primary', titleKey: 'facility.delivery.title', descKey: 'facility.delivery.desc' },
 ];
 
-export const footerSpecialtyKeys = [
-  'footer.specialty1',
-  'footer.specialty2',
-  'footer.specialty3',
-  'footer.specialty4',
-  'footer.specialty5',
+export const footerSpecialtyLinks = [
+  { key: 'footer.specialty1', to: '/specialties#fertility-care' },
+  { key: 'footer.specialty2', to: '/specialties#maternity-care' },
+  { key: 'footer.specialty3', to: '/specialties#surgical-care' },
+  { key: 'footer.specialty4', to: '/specialties#surgical-care' },
+  { key: 'footer.specialty5', to: '/specialties' },
 ];
 
 export const departmentOptions = [

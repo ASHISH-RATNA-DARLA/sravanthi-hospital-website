@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useLanguage } from '../i18n/LanguageContext';
 import { pillars, pillarAccent } from '../data/content';
 
@@ -56,7 +57,7 @@ export function Specialties() {
                   )}
                 </div>
 
-                <div className="pt-space-md">
+                <div className="pt-space-md flex flex-col gap-space-xs">
                   <a
                     href="#quick-enquiry"
                     className="w-full bg-surface-container text-primary font-label-lg text-label-lg py-2.5 rounded-xl font-bold flex items-center justify-center gap-2 group-hover:bg-primary group-hover:text-on-primary transition-colors"
@@ -64,6 +65,12 @@ export function Specialties() {
                     {t(pillar.ctaKey)}
                     <span className="material-symbols-outlined text-[16px]">north_east</span>
                   </a>
+                  <Link
+                    to={`/specialties#${pillar.id}`}
+                    className="w-full text-center font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-1"
+                  >
+                    {t('specialties.learnMore')}
+                  </Link>
                 </div>
               </div>
             );

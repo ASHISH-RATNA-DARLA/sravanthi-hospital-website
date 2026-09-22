@@ -5,9 +5,9 @@ import { Enquiry } from '../components/Enquiry';
 import { Seo } from '../components/Seo';
 import { buildBreadcrumbSchema } from '../data/schema';
 
-const TITLE = 'Our Specialties — Fertility, Maternity & Laparoscopic Surgery | Sravanthi Hospital Suryapet';
+const TITLE = 'Gynecology, Fertility, Maternity & Surgery | Sravanthi Hospital, Suryapet';
 const DESCRIPTION =
-  'Explore Fertility & Reproductive Medicine, Maternity & Mother-Baby Care, and Laparoscopic & Laser Surgery at Sravanthi Hospital, Suryapet — treatments, doctors, and how to book.';
+  'Gynecologist, fertility (IVF/IUI), maternity & laparoscopic surgery (gallbladder, hernia, piles) — Sravanthi Hospital, Suryapet, Telangana. Treatments and doctors.';
 const BREADCRUMB = buildBreadcrumbSchema([
   { name: 'Home', path: '/' },
   { name: 'Specialties', path: '/specialties' },
@@ -111,7 +111,7 @@ export default function SpecialtiesPage() {
                       </span>
                       <div className="flex items-center gap-space-sm">
                         <img
-                          alt={t(doctor.nameKey)}
+                          alt={`${t(doctor.nameKey)} — ${t(doctor.tagKey)}, Suryapet`}
                           className="w-16 h-16 rounded-xl object-cover object-top flex-shrink-0"
                           src={images[doctor.image]}
                           loading="lazy"
