@@ -13,7 +13,7 @@ export function Seo({ title, description, path = '/', jsonLd, noindex = false })
       <title>{title}</title>
       <meta name="description" content={description} />
       <link rel="canonical" href={url} />
-      {noindex && <meta name="robots" content="noindex, nofollow" />}
+      <meta name="robots" content={noindex ? 'noindex, nofollow' : 'index, follow'} />
 
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content={SITE_NAME} />

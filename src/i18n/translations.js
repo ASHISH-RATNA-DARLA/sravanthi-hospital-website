@@ -132,6 +132,7 @@ export const translations = {
     'doctor.praveen.cta': 'Book with Dr. Praveen',
 
     'doctor.hours.label': 'Consultation Hours',
+    'doctor.viewProfile': 'View Full Profile',
 
     'enquiry.label': 'Direct Clinic Desk',
     'enquiry.heading': 'Quick OPD Appointment',
@@ -373,6 +374,7 @@ export const translations = {
     'doctor.praveen.cta': 'డా. ప్రవీణ్‌తో బుక్ చేయండి',
 
     'doctor.hours.label': 'కన్సల్టేషన్ సమయాలు',
+    'doctor.viewProfile': 'పూర్తి ప్రొఫైల్ చూడండి',
 
     'enquiry.label': 'డైరెక్ట్ క్లినిక్ డెస్క్',
     'enquiry.heading': 'త్వరిత OPD అపాయింట్‌మెంట్',

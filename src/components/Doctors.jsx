@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useLanguage } from '../i18n/LanguageContext';
 import { doctors, images } from '../data/content';
 
@@ -43,14 +44,20 @@ export function Doctors() {
                   <span className="font-label-lg text-label-lg text-primary font-bold">{t(doctor.hoursKey)}</span>
                 </div>
 
-                <div className="pt-space-xs">
+                <div className="pt-space-xs flex flex-wrap gap-space-sm">
                   <a
                     href="#quick-enquiry"
-                    className={`w-full py-2.5 px-4 rounded-xl font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 transition-all ${doctor.ctaClass}`}
+                    className={`flex-1 py-2.5 px-4 rounded-xl font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 transition-all ${doctor.ctaClass}`}
                   >
                     <span className="material-symbols-outlined text-[18px]">calendar_month</span>
                     {t(doctor.ctaKey)}
                   </a>
+                  <Link
+                    to={`/doctors/${doctor.slug}`}
+                    className="py-2.5 px-4 rounded-xl font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 bg-surface-container text-primary hover:bg-primary hover:text-on-primary transition-all"
+                  >
+                    {t('doctor.viewProfile')}
+                  </Link>
                 </div>
               </div>
             </div>

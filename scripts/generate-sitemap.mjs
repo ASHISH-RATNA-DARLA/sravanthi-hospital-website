@@ -11,6 +11,12 @@ const SITE_URL = 'https://sravanthihospital.in';
 const routes = [
   { path: '/', file: 'src/pages/HomePage.jsx' },
   { path: '/specialties', file: 'src/pages/SpecialtiesPage.jsx' },
+  { path: '/specialties/fertility', file: 'src/pages/ServiceDetailPage.jsx' },
+  { path: '/specialties/maternity', file: 'src/pages/ServiceDetailPage.jsx' },
+  { path: '/specialties/laparoscopic-surgery', file: 'src/pages/ServiceDetailPage.jsx' },
+  { path: '/doctors', file: 'src/pages/DoctorsPage.jsx' },
+  { path: '/doctors/dr-t-chaitanya-sravanthi', file: 'src/pages/DoctorDetailPage.jsx' },
+  { path: '/doctors/dr-praveen-sirasani', file: 'src/pages/DoctorDetailPage.jsx' },
 ];
 
 function lastmodOf(relativeFile) {

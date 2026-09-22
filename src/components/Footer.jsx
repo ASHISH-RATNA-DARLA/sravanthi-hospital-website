@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../i18n/LanguageContext';
-import { PHONE, footerSpecialtyLinks, INSTAGRAM_LINK } from '../data/content';
+import { PHONE, footerSpecialtyLinks, INSTAGRAM_LINK, doctors } from '../data/content';
 
 export function Footer() {
   const { t, logo } = useLanguage();
@@ -58,11 +58,15 @@ export function Footer() {
             <h4 className="font-title-md text-title-md font-bold text-on-primary">{t('footer.leadership.heading')}</h4>
             <div className="flex flex-col gap-space-sm font-body-md text-body-md text-surface-container-high/90">
               <div>
-                <p className="font-label-lg text-label-lg text-on-primary font-bold">{t('doctor.chaitanya.name')}</p>
+                <Link to={`/doctors/${doctors.find((d) => d.id === 'chaitanya').slug}`} className="font-label-lg text-label-lg text-on-primary font-bold hover:text-secondary-fixed transition-colors">
+                  {t('doctor.chaitanya.name')}
+                </Link>
                 <p>{t('footer.leadership.chaitanya.role')}</p>
               </div>
               <div>
-                <p className="font-label-lg text-label-lg text-on-primary font-bold">{t('doctor.praveen.name')}</p>
+                <Link to={`/doctors/${doctors.find((d) => d.id === 'praveen').slug}`} className="font-label-lg text-label-lg text-on-primary font-bold hover:text-secondary-fixed transition-colors">
+                  {t('doctor.praveen.name')}
+                </Link>
                 <p>{t('footer.leadership.praveen.role')}</p>
               </div>
             </div>

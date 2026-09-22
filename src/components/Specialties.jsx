@@ -66,7 +66,7 @@ export function Specialties() {
                     <span className="material-symbols-outlined text-[16px]">north_east</span>
                   </a>
                   <Link
-                    to={`/specialties#${pillar.id}`}
+                    to={`/specialties/${pillar.slug}`}
                     className="w-full text-center font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-1"
                   >
                     {t('specialties.learnMore')}

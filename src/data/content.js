@@ -7,7 +7,7 @@ export const MAPS_EMBED_SRC = `https://www.google.com/maps?q=${encodeURIComponen
 export const navLinks = [
   { key: 'nav.home', to: '/' },
   { key: 'nav.specialties', to: '/specialties' },
-  { key: 'nav.doctors', href: '/#doctors' },
+  { key: 'nav.doctors', to: '/doctors' },
   { key: 'nav.facilities', href: '/#facilities' },
   { key: 'nav.location', href: '/#location' },
 ];
@@ -72,6 +72,7 @@ export const quickActions = [
 export const pillars = [
   {
     id: 'fertility-care',
+    slug: 'fertility',
     icon: 'egg',
     accent: 'secondary',
     tagKey: 'pillar.fertility.tag',
@@ -82,9 +83,11 @@ export const pillars = [
     ctaKey: 'pillar.fertility.cta',
     noteKey: 'pillar.fertility.note',
     doctorId: 'chaitanya',
+    faqIds: [4, 11],
   },
   {
     id: 'maternity-care',
+    slug: 'maternity',
     icon: 'pregnant_woman',
     accent: 'primary',
     tagKey: 'pillar.maternity.tag',
@@ -94,9 +97,11 @@ export const pillars = [
     featureKeys: ['pillar.maternity.f1', 'pillar.maternity.f2', 'pillar.maternity.f3', 'pillar.maternity.f4', 'pillar.maternity.f5'],
     ctaKey: 'pillar.maternity.cta',
     doctorId: 'chaitanya',
+    faqIds: [13],
   },
   {
     id: 'surgical-care',
+    slug: 'laparoscopic-surgery',
     icon: 'medical_services',
     accent: 'tertiary',
     tagKey: 'pillar.surgery.tag',
@@ -106,6 +111,7 @@ export const pillars = [
     featureKeys: ['pillar.surgery.f1', 'pillar.surgery.f2', 'pillar.surgery.f3', 'pillar.surgery.f4', 'pillar.surgery.f5'],
     ctaKey: 'pillar.surgery.cta',
     doctorId: 'praveen',
+    faqIds: [8, 9, 10],
   },
 ];
 
@@ -133,6 +139,7 @@ export const pillarAccent = {
 export const doctors = [
   {
     id: 'chaitanya',
+    slug: 'dr-t-chaitanya-sravanthi',
     image: 'drChaitanya',
     tagKey: 'doctor.chaitanya.tag',
     tagClass: 'bg-secondary-fixed text-on-secondary-fixed',
@@ -144,9 +151,12 @@ export const doctors = [
     hoursKey: 'doctor.chaitanya.hours',
     ctaKey: 'doctor.chaitanya.cta',
     ctaClass: 'bg-secondary text-on-secondary hover:bg-secondary-container',
+    alumniOf: ['Gandhi Medical College', 'Osmania Medical College'],
+    credentialList: ['MBBS', 'MS', 'FRM'],
   },
   {
     id: 'praveen',
+    slug: 'dr-praveen-sirasani',
     image: 'drPraveen',
     tagKey: 'doctor.praveen.tag',
     tagClass: 'bg-primary-fixed text-on-primary-fixed',
@@ -158,6 +168,8 @@ export const doctors = [
     hoursKey: 'doctor.praveen.hours',
     ctaKey: 'doctor.praveen.cta',
     ctaClass: 'bg-primary text-on-primary hover:bg-primary-container',
+    alumniOf: ['Narayana Medical College'],
+    credentialList: ['MBBS', 'MS', 'FMAS', 'FIAGES'],
   },
 ];
 
@@ -185,10 +197,10 @@ export const facilities = [
 ];
 
 export const footerSpecialtyLinks = [
-  { key: 'footer.specialty1', to: '/specialties#fertility-care' },
-  { key: 'footer.specialty2', to: '/specialties#maternity-care' },
-  { key: 'footer.specialty3', to: '/specialties#surgical-care' },
-  { key: 'footer.specialty4', to: '/specialties#surgical-care' },
+  { key: 'footer.specialty1', to: '/specialties/fertility' },
+  { key: 'footer.specialty2', to: '/specialties/maternity' },
+  { key: 'footer.specialty3', to: '/specialties/laparoscopic-surgery' },
+  { key: 'footer.specialty4', to: '/specialties/laparoscopic-surgery' },
   { key: 'footer.specialty5', to: '/specialties' },
 ];
 

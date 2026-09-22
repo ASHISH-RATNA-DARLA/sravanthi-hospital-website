@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../i18n/LanguageContext';
-import { pillars, pillarAccent, processSteps, doctors, images } from '../data/content';
+import { pillars, pillarAccent, processSteps } from '../data/content';
 import { Enquiry } from '../components/Enquiry';
 import { Seo } from '../components/Seo';
 import { buildBreadcrumbSchema } from '../data/schema';
@@ -58,85 +58,38 @@ export default function SpecialtiesPage() {
         </div>
       </section>
 
-      {pillars.map((pillar, index) => {
-        const accent = pillarAccent[pillar.accent];
-        const doctor = doctors.find((d) => d.id === pillar.doctorId);
-        const altBg = index % 2 === 1 ? 'bg-surface-container-low' : 'bg-surface';
-
-        return (
-          <section key={pillar.id} id={pillar.id} className={`w-full py-space-xl scroll-mt-[112px] ${altBg}`}>
-            <div className="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
-                <div className="lg:col-span-8 flex flex-col gap-space-md">
-                  <div className="flex items-center gap-space-sm">
-                    <span className={`font-label-md text-label-md uppercase px-2.5 py-0.5 rounded-full font-bold ${accent.tag}`}>{t(pillar.tagKey)}</span>
-                    <span className={`material-symbols-outlined text-[32px] ${accent.icon}`}>{pillar.icon}</span>
-                  </div>
-                  <h2 className="font-headline-lg text-headline-lg-mobile sm:text-headline-lg text-primary font-bold">{t(pillar.titleKey)}</h2>
-                  <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">{t(pillar.descKey)}</p>
-                  <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">{t(pillar.pageDescKey)}</p>
-
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-space-xs">
-                    {pillar.featureKeys.map((key) => (
-                      <div key={key} className="bg-surface-container-lowest p-space-sm rounded-xl flex items-center gap-space-sm shadow-sm">
-                        <span className={`material-symbols-outlined text-[20px] flex-shrink-0 ${accent.check}`}>check_circle</span>
-                        <span className="font-body-md text-body-md text-on-surface">{t(key)}</span>
-                      </div>
-                    ))}
-                  </div>
-
-                  {pillar.noteKey && (
-                    <span className="inline-flex items-center gap-1.5 self-start bg-surface-container-high text-on-surface-variant px-2.5 py-1 rounded-full font-caption text-caption font-semibold">
-                      <span className="material-symbols-outlined text-[14px]">schedule</span>
-                      {t(pillar.noteKey)}
-                    </span>
-                  )}
-
-                  <div className="pt-space-sm">
-                    <a
-                      href="/#quick-enquiry"
-                      className="inline-flex items-center gap-2 bg-surface-container-lowest text-primary shadow-md px-6 py-3 rounded-xl font-label-lg text-label-lg font-bold hover:bg-primary hover:text-on-primary transition-colors"
-                    >
-                      {t(pillar.ctaKey)}
-                      <span className="material-symbols-outlined text-[18px]">north_east</span>
-                    </a>
-                  </div>
-                </div>
-
-                {doctor && (
-                  <div className="lg:col-span-4">
-                    <div className="bg-surface-container-lowest rounded-2xl p-space-md shadow-lg flex flex-col gap-space-sm">
-                      <span className="font-label-md text-label-md uppercase tracking-wider text-secondary font-bold">
-                        {t('specialties.page.meetDoctor')}
+      <section className="w-full py-space-xl bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+            {pillars.map((pillar) => {
+              const accent = pillarAccent[pillar.accent];
+              return (
+                <Link
+                  key={pillar.slug}
+                  to={`/specialties/${pillar.slug}`}
+                  className="bg-surface-container-lowest rounded-2xl p-space-lg shadow-md flex flex-col justify-between hover:shadow-xl transition-all group"
+                >
+                  <div className="flex flex-col gap-space-sm">
+                    <div className={`h-2 w-20 rounded-full ${accent.bar}`} />
+                    <div className="flex items-center justify-between">
+                      <span className={`font-label-md text-label-md uppercase px-2.5 py-0.5 rounded-full font-bold ${accent.tag}`}>
+                        {t(pillar.tagKey)}
                       </span>
-                      <div className="flex items-center gap-space-sm">
-                        <img
-                          alt={`${t(doctor.nameKey)} — ${t(doctor.tagKey)}, Suryapet`}
-                          className="w-16 h-16 rounded-xl object-cover object-top flex-shrink-0"
-                          src={images[doctor.image]}
-                          loading="lazy"
-                        />
-                        <div className="flex flex-col">
-                          <span className="font-title-md text-title-md text-primary font-bold">{t(doctor.nameKey)}</span>
-                          <span className={`font-label-md text-label-md font-semibold ${doctor.credentialsClass}`}>{t(doctor.tagKey)}</span>
-                        </div>
-                      </div>
-                      <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">{t(doctor.bioKey)}</p>
-                      <a
-                        href="/#doctors"
-                        className={`w-full py-2.5 px-4 rounded-xl font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 transition-all ${doctor.ctaClass}`}
-                      >
-                        <span className="material-symbols-outlined text-[18px]">badge</span>
-                        {t(doctor.nameKey)}
-                      </a>
+                      <span className={`material-symbols-outlined text-[32px] ${accent.icon}`}>{pillar.icon}</span>
                     </div>
+                    <h2 className="font-headline-md text-headline-md text-primary font-bold">{t(pillar.titleKey)}</h2>
+                    <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">{t(pillar.descKey)}</p>
                   </div>
-                )}
-              </div>
-            </div>
-          </section>
-        );
-      })}
+                  <div className="pt-space-md flex items-center gap-2 font-label-lg text-label-lg text-primary font-bold group-hover:text-secondary transition-colors">
+                    {t('specialties.learnMore')}
+                    <span className="material-symbols-outlined text-[18px]">north_east</span>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      </section>
 
       <Enquiry />
     </div>
