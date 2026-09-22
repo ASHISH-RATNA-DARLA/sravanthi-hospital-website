@@ -1,6 +1,7 @@
 export const PHONE = '8344271555';
 export const WHATSAPP = '918344271555';
 export const MAPS_LINK = 'https://maps.app.goo.gl/SHMZB6FAeN6PWFLj9';
+export const INSTAGRAM_LINK = 'https://www.instagram.com/dr_sravanthi_hospital';
 export const MAPS_EMBED_SRC = `https://www.google.com/maps?q=${encodeURIComponent('Sravanthi Hospital, Vidya Nagar, Suryapet, Telangana')}&z=16&output=embed`;
 
 export const navLinks = [
@@ -28,10 +29,8 @@ export const heroStats = [
 
 export const images = {
   heroLobby: '/assets/hospital.png',
-  drChaitanya:
-    'https://lh3.googleusercontent.com/aida-public/AB6AXuA6Rm07l75igWb9qTZH06RUGYErYWMaUg5eDu4RC9nEBIdzd8j-oRwmskGes_aSw8Yx921q5A3be-OEYSrL5OgH1WrWgoqzNE8TFEMnHU_vZDfdsqOG36sglS1iQAuk5WW42OjLFomxGDVKO1XDrFvn8U7Q-GIZFCn6xeUm-XC3Gph2ygrWtnd5kq91EMLBoWKhLjaKWq1KgnBs_lHSD5uI21n-xE3zsBUxgN3egaC3rVTKbuC9Z1Nvvg',
-  drPraveen:
-    'https://lh3.googleusercontent.com/aida-public/AB6AXuBz0Uftn2WBIs5Mhd5i-1c0HbRxj63cLpGi7RbdaIj2ifhmvVzWfqq5VLnvxzCndndGhYCyd7-1Q_hzO1SdA0AnWjaj-WCZ4guUQmXnqXfXjzTqy82wyP1iyXMFWhTp-9df2xGVW_c6Xm9YGAmaAaD-wLgup5Obkq1awWaJ-zuQM-WTn61xFF2XatArgVQTdTy4MG3f7taGTzg38BqTUeBXZsIMIy-Y5EYz7JMn5unEH9jCorezb1CFEA',
+  drChaitanya: '/assets/sravanthi_profile.png',
+  drPraveen: '/assets/praveen_profile.png',
 };
 
 export const quickActions = [

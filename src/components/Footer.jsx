@@ -1,5 +1,5 @@
 import { useLanguage } from '../i18n/LanguageContext';
-import { PHONE, footerSpecialtyKeys } from '../data/content';
+import { PHONE, footerSpecialtyKeys, INSTAGRAM_LINK } from '../data/content';
 
 export function Footer() {
   const { t, logo } = useLanguage();
@@ -26,6 +26,17 @@ export function Footer() {
                 <span className="material-symbols-outlined text-[14px] text-secondary-fixed">schedule</span>
                 {t('footer.badge.open')}
               </span>
+              <a
+                href={INSTAGRAM_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={t('footer.social.instagram')}
+                className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-primary-container/60 text-on-primary hover:bg-secondary-fixed hover:text-on-secondary-fixed transition-colors"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
+                  <path d="M12 2.2c3.2 0 3.6 0 4.85.07 1.17.05 1.97.24 2.43.4a4.9 4.9 0 0 1 1.77 1.15 4.9 4.9 0 0 1 1.15 1.77c.16.46.35 1.26.4 2.43.06 1.25.07 1.65.07 4.85s0 3.6-.07 4.85c-.05 1.17-.24 1.97-.4 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.46.16-1.26.35-2.43.4-1.25.06-1.65.07-4.85.07s-3.6 0-4.85-.07c-1.17-.05-1.97-.24-2.43-.4a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.16-.46-.35-1.26-.4-2.43C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.85c.05-1.17.24-1.97.4-2.43a4.9 4.9 0 0 1 1.15-1.77A4.9 4.9 0 0 1 5.6 1.8c.46-.16 1.26-.35 2.43-.4C9.28 1.34 9.68 1.33 12 1.33Zm0 1.8c-3.15 0-3.52 0-4.76.07-1.02.05-1.58.21-1.95.36a3.1 3.1 0 0 0-1.15.75c-.35.35-.57.68-.75 1.15-.15.37-.31.93-.36 1.95-.06 1.24-.07 1.61-.07 4.62s0 3.38.07 4.62c.05 1.02.21 1.58.36 1.95.18.47.4.8.75 1.15.35.35.68.57 1.15.75.37.15.93.31 1.95.36 1.24.06 1.61.07 4.76.07s3.52 0 4.76-.07c1.02-.05 1.58-.21 1.95-.36a3.1 3.1 0 0 0 1.15-.75c.35-.35.57-.68.75-1.15.15-.37.31-.93.36-1.95.06-1.24.07-1.61.07-4.62s0-3.38-.07-4.62c-.05-1.02-.21-1.58-.36-1.95a3.1 3.1 0 0 0-.75-1.15 3.1 3.1 0 0 0-1.15-.75c-.37-.15-.93-.31-1.95-.36C15.52 4 15.15 4 12 4Zm0 3.4a4.6 4.6 0 1 1 0 9.2 4.6 4.6 0 0 1 0-9.2Zm0 1.8a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6Zm4.8-2a1.08 1.08 0 1 1 0 2.16 1.08 1.08 0 0 1 0-2.16Z" />
+                </svg>
+              </a>
             </div>
           </div>
 
@@ -58,10 +69,6 @@ export function Footer() {
               <li className="flex items-start gap-2">
                 <span className="material-symbols-outlined text-[18px] text-secondary-fixed">location_on</span>
                 <span>{t('location.address.value')}</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-[18px] text-secondary-fixed">pin_drop</span>
-                <span>{t('location.pluscode.value')}</span>
               </li>
               <li className="flex items-center gap-2">
                 <a href={`tel:${PHONE}`} className="flex items-center gap-2 hover:text-secondary-fixed transition-colors">
