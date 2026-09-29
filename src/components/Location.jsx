@@ -1,5 +1,5 @@
 import { useLanguage } from '../i18n/LanguageContext';
-import { PHONE, MAPS_LINK, MAPS_EMBED_SRC } from '../data/content';
+import { PHONE, MAPS_LINK, MAPS_EMBED_SRC, SERVICE_AREAS } from '../data/content';
 
 export function Location() {
   const { t } = useLanguage();
@@ -35,6 +35,21 @@ export function Location() {
                   <span className="font-body-md text-body-md text-on-surface-variant">{t('location.parking.value')}</span>
                 </div>
               </div>
+            </div>
+
+            <div>
+              <h3 className="font-label-lg text-label-lg text-primary font-bold mb-2">{t('location.areas.heading')}</h3>
+              <p className="font-body-md text-body-md text-on-surface-variant mb-3 leading-relaxed">{t('location.areas.desc')}</p>
+              <ul className="flex flex-wrap gap-2" aria-label={t('location.areas.heading')}>
+                {SERVICE_AREAS.map((area) => (
+                  <li
+                    key={area}
+                    className="font-label-md text-label-md text-on-surface bg-surface-container px-3 py-1.5 rounded-lg"
+                  >
+                    {area}
+                  </li>
+                ))}
+              </ul>
             </div>
 
             <div className="flex flex-wrap items-center gap-space-sm pt-space-xs">

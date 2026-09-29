@@ -5,9 +5,9 @@ import { Enquiry } from '../components/Enquiry';
 import { Seo } from '../components/Seo';
 import { buildBreadcrumbSchema } from '../data/schema';
 
-const TITLE = 'Gynecology, Fertility, Maternity & Surgery | Sravanthi Hospital, Suryapet';
+const TITLE = 'Specialties | Gynecologist, Fertility, Maternity & Surgery Suryapet';
 const DESCRIPTION =
-  'Gynecologist, fertility (IVF/IUI), maternity & laparoscopic surgery (gallbladder, hernia, piles) — Sravanthi Hospital, Suryapet, Telangana. Treatments and doctors.';
+  'Explore gynecology, fertility (IUI/IVF), maternity & laparoscopic/laser surgery at Sravanthi Hospital, Suryapet — treatments, doctors, and how to book.';
 const BREADCRUMB = buildBreadcrumbSchema([
   { name: 'Home', path: '/' },
   { name: 'Specialties', path: '/specialties' },

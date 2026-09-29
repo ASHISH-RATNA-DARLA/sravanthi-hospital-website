@@ -40,4 +40,12 @@ body.lang-te {
   word-wrap: normal;
   direction: ltr;
   -webkit-font-smoothing: antialiased;
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  font-feature-settings: 'liga';
+  -webkit-font-feature-settings: 'liga';
+  /* Space reserved so layout does not jump when icons become visible */
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  vertical-align: middle;
 }

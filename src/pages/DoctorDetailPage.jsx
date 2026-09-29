@@ -10,14 +10,14 @@ const en = translations.en;
 
 const SEO_COPY = {
   'dr-t-chaitanya-sravanthi': {
-    title: 'Dr. T. Chaitanya Sravanthi — Gynecologist, Suryapet | Sravanthi Hospital',
+    title: 'Dr. T. Chaitanya Sravanthi | Gynecologist & Fertility Doctor Suryapet',
     description:
-      'Dr. T. Chaitanya Sravanthi (MBBS, MS, FRM) — Obstetrics & Gynecology, Reproductive Medicine at Sravanthi Hospital, Suryapet. 15+ years experience. Consultation 2–8 PM.',
+      'Lady gynecologist in Suryapet — Dr. T. Chaitanya Sravanthi (MBBS, MS, FRM). Fertility, maternity & high-risk pregnancy. OPD 2–8 PM. Call 8344271555.',
   },
   'dr-praveen-sirasani': {
-    title: 'Dr. Praveen Sirasani — Laparoscopic Surgeon, Suryapet | Sravanthi Hospital',
+    title: 'Dr. Praveen Sirasani | Laparoscopic Surgeon Suryapet | Sravanthi Hospital',
     description:
-      'Dr. Praveen Sirasani (MS, FMAS, FIAGES) — General Surgery, Laparoscopic & Laser Surgery at Sravanthi Hospital, Suryapet. 15+ years experience. Consultation 10 AM–7 PM.',
+      'Laparoscopic & laser surgeon in Suryapet — Dr. Praveen Sirasani (MS, FMAS, FIAGES). Gallbladder, hernia, piles laser. OPD 10 AM–7 PM. Call 8344271555.',
   },
 };
 

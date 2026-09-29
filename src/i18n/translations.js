@@ -216,6 +216,9 @@ export const translations = {
     'location.callBtn': 'Call Reception for Landmark',
     'location.mapCaption': 'Sravanthi Hospital • Main Campus',
     'location.mapTag': 'Vidya Nagar Landmark • Suryapet',
+    'location.areas.heading': 'Areas We Serve',
+    'location.areas.desc':
+      'Patients visit us from across Suryapet district and nearby towns for gynecology, fertility, maternity, and laparoscopic surgery.',
 
     'cta.heading': 'Need Instant Medical Guidance?',
     'cta.desc': 'Our doctors and medical officers are accessible round the clock.',
@@ -458,7 +461,9 @@ export const translations = {
     'location.callBtn': 'ల్యాండ్‌మార్క్ కోసం రిసెప్షన్‌కు కాల్ చేయండి',
     'location.mapCaption': 'శ్రావంతి హాస్పిటల్ • మెయిన్ క్యాంపస్',
     'location.mapTag': 'విద్యా నగర్ ల్యాండ్‌మార్క్ • సూర్యాపేట',
-
+    'location.areas.heading': 'మేము సేవ చేసే ప్రాంతాలు',
+    'location.areas.desc':
+      'గైనకాలజీ, ఫెర్టిలిటీ, మెటర్నిటీ, లాప్రోస్కోపిక్ సర్జరీ కోసం సూర్యాపేట జిల్లా, సమీప పట్టణాల నుండి పేషెంట్లు మా వద్దకు వస్తారు.',
 
     'cta.heading': 'తక్షణ వైద్య మార్గదర్శకత్వం కావాలా?',
     'cta.desc': 'మా వైద్యులు మరియు వైద్య అధికారులు రోజంతా అందుబాటులో ఉంటారు.',

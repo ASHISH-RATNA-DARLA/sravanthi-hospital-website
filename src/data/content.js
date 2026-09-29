@@ -4,6 +4,17 @@ export const MAPS_LINK = 'https://maps.app.goo.gl/SHMZB6FAeN6PWFLj9';
 export const INSTAGRAM_LINK = 'https://www.instagram.com/dr_sravanthi_hospital';
 export const MAPS_EMBED_SRC = `https://www.google.com/maps?q=${encodeURIComponent('Sravanthi Hospital, Vidya Nagar, Suryapet, Telangana')}&z=16&output=embed`;
 
+/** Towns/cities used for local SEO copy + structured data areaServed */
+export const SERVICE_AREAS = [
+  'Suryapet',
+  'Kodad',
+  'Jangaon',
+  'Khammam',
+  'Nalgonda',
+  'Miryalaguda',
+  'Huzurnagar',
+];
+
 export const navLinks = [
   { key: 'nav.home', to: '/' },
   { key: 'nav.specialties', to: '/specialties' },
@@ -153,6 +164,7 @@ export const doctors = [
     ctaClass: 'bg-secondary text-on-secondary hover:bg-secondary-container',
     alumniOf: ['Gandhi Medical College', 'Osmania Medical College'],
     credentialList: ['MBBS', 'MS', 'FRM'],
+    medicalSpecialty: ['Gynecologic', 'Obstetric', 'Reproductive'],
   },
   {
     id: 'praveen',
@@ -170,6 +182,7 @@ export const doctors = [
     ctaClass: 'bg-primary text-on-primary hover:bg-primary-container',
     alumniOf: ['Narayana Medical College'],
     credentialList: ['MBBS', 'MS', 'FMAS', 'FIAGES'],
+    medicalSpecialty: ['Surgical'],
   },
 ];
 

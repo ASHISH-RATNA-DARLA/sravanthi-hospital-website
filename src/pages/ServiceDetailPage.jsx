@@ -7,19 +7,19 @@ import { buildBreadcrumbSchema, buildServiceSchema } from '../data/schema';
 
 const SEO_COPY = {
   fertility: {
-    title: 'Fertility & Reproductive Medicine | Sravanthi Hospital, Suryapet',
+    title: 'Fertility Centre Suryapet | IUI, IVF Guidance | Sravanthi Hospital',
     description:
-      'Infertility evaluation, IUI, IVF guidance & protocol planning, ovulation tracking — Fertility & Reproductive Medicine at Sravanthi Hospital, Suryapet, Telangana.',
+      'Fertility centre in Suryapet for infertility evaluation, IUI, IVF guidance & ovulation tracking. Serving Kodad, Khammam & Nalgonda. Call 8344271555.',
   },
   maternity: {
-    title: 'Maternity & High-Risk Pregnancy Care | Sravanthi Hospital, Suryapet',
+    title: 'Maternity Hospital Suryapet | High-Risk Pregnancy | Sravanthi Hospital',
     description:
-      'Antenatal care, painless natural delivery, high-risk pregnancy (hypertension, GDM), neonatal support — Maternity Care at Sravanthi Hospital, Suryapet, Telangana.',
+      'Maternity hospital in Suryapet — antenatal care, delivery, high-risk pregnancy (hypertension, GDM) & neonatal support. 24/7 emergency. Call 8344271555.',
   },
   'laparoscopic-surgery': {
-    title: 'Laparoscopic & Laser Surgery | Sravanthi Hospital, Suryapet',
+    title: 'Laparoscopic Surgery Suryapet | Gallbladder, Hernia, Piles Laser',
     description:
-      'Laparoscopic cholecystectomy (gallbladder), hernia repair, laser proctology (piles, fissure, fistula), TLH — Surgery at Sravanthi Hospital, Suryapet, Telangana.',
+      'Laparoscopic gallbladder & hernia surgery, laser piles/fissure/fistula treatment in Suryapet. Dr. Praveen Sirasani. Book at Sravanthi Hospital — 8344271555.',
   },
 };
 

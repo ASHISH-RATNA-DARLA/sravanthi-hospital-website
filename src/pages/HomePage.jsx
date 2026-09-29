@@ -9,16 +9,21 @@ import { Location } from '../components/Location';
 import { Faq } from '../components/Faq';
 import { BottomCta } from '../components/BottomCta';
 import { Seo } from '../components/Seo';
-import { buildFaqSchema } from '../data/schema';
+import { buildFaqSchema, buildWebsiteSchema } from '../data/schema';
 
-const TITLE = 'Sravanthi Hospital | Gynecologist, Fertility & Maternity Care, Suryapet';
+const TITLE = 'Sravanthi Hospital Suryapet | Gynecologist, Fertility, Maternity & Surgery';
 const DESCRIPTION =
-  'Sravanthi Hospital, Suryapet, Telangana — Gynecologist, Fertility (IVF/IUI) & Maternity Care, Laparoscopic Surgery. Emergency 24/7. Call 8344271555.';
+  'Gynecologist, fertility (IUI/IVF), maternity & laparoscopic surgery hospital in Vidya Nagar, Suryapet, Telangana. 24/7 emergency. Call 8344271555.';
 
 export default function HomePage() {
   return (
     <div className="flex flex-col w-full">
-      <Seo title={TITLE} description={DESCRIPTION} path="/" jsonLd={buildFaqSchema()} />
+      <Seo
+        title={TITLE}
+        description={DESCRIPTION}
+        path="/"
+        jsonLd={[buildWebsiteSchema(), buildFaqSchema()]}
+      />
       <Hero />
       <QuickActions />
       <BilingualBanner />

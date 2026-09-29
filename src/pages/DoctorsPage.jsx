@@ -5,9 +5,9 @@ import { Enquiry } from '../components/Enquiry';
 import { Seo } from '../components/Seo';
 import { buildBreadcrumbSchema } from '../data/schema';
 
-const TITLE = 'Our Doctors | Sravanthi Hospital, Suryapet';
+const TITLE = 'Doctors in Suryapet | Gynecologist & Laparoscopic Surgeon';
 const DESCRIPTION =
-  'Dr. T. Chaitanya Sravanthi (Obstetrics & Gynecology, Fertility) and Dr. Praveen Sirasani (Laparoscopic & Laser Surgery) — Sravanthi Hospital, Suryapet.';
+  'Meet Dr. T. Chaitanya Sravanthi (gynecologist & fertility) and Dr. Praveen Sirasani (laparoscopic & laser surgeon) at Sravanthi Hospital, Suryapet. Book OPD today.';
 const BREADCRUMB = buildBreadcrumbSchema([
   { name: 'Home', path: '/' },
   { name: 'Doctors', path: '/doctors' },
